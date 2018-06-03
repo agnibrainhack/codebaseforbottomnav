@@ -62,7 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
         HomeFragment fragment = HomeFragment.newInstance();
         ft = getFragmentManager().beginTransaction();
+        ft.setCustomAnimations(R.animator.enter_from_left, R.animator.enter_from_right );
         ft.replace(R.id.fragment_frame, fragment);
+
         ft.commit();
     }
 
@@ -70,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
         ProfileFragment fragment = ProfileFragment.newInstance();
         ft = getFragmentManager().beginTransaction();
+        ft.setCustomAnimations(R.animator.enter_from_left, R.animator.enter_from_right );
         ft.replace(R.id.fragment_frame, fragment);
         ft.commit();
     }
@@ -78,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         SettingsFragment fragment = SettingsFragment.newInstance();
         ft = getFragmentManager().beginTransaction();
+        ft.setCustomAnimations(R.animator.enter_from_left, R.animator.enter_from_right );
         ft.replace(R.id.fragment_frame, fragment);
         ft.commit();
     }
@@ -85,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
         SettingsFragment2 fragment = SettingsFragment2.newInstance();
         ft = getFragmentManager().beginTransaction();
+        ft.setCustomAnimations(R.animator.enter_from_left, R.animator.enter_from_right );
         ft.replace(R.id.fragment_frame, fragment);
         ft.commit();
     }
